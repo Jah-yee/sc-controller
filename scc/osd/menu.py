@@ -413,7 +413,7 @@ class Menu(OSDWindow):
 	
 	def lock_inputs(self):
 		def success(*a):
-			log.error("Sucessfully locked input")
+			log.error("Successfully locked input")
 		locks = [ self._control_with, self._confirm_with, self._cancel_with ]
 		if self._control_with == "STICK":
 			if self.controller.get_flags() & ControllerFlags.HAS_DPAD != 0:
